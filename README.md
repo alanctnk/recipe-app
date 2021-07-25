@@ -1,5 +1,5 @@
 # App de Receitas
-### Projeto feito consumido duas API's:
+### Projeto feito consumindo duas API's:
 - [The Meal DB](https://themealdb.com/)
 - [The Cocktail DB](https://thecocktaildb.com/)
 
