@@ -1,0 +1,615 @@
+/* @media screen and ( max-width : 414px ) { */
+
+/* Apicação no geral */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Tela de Login */
+.tela-login {
+  background: white;
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+}
+
+.background-top {
+  background: linear-gradient(45deg, #ff4763, #ff4763, #ff3f29);
+  border-radius: 50%;
+  height: 410px;
+  overflow: hidden;
+  position: relative;
+  right: 12%;
+  top: -30%;
+  width: 410px;
+}
+
+.background-top img {
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.background-bottom {
+  border-radius: 50%;
+  bottom: 0;
+  position: absolute;
+  right: 10px;
+  transform: rotate(-25deg);
+}
+
+.background-bottom img {
+  height: 100px;
+  object-fit: cover;
+  width: 100px;
+}
+
+.form-login {
+  align-items: center;
+  background-color: #f7f2f7;
+  border: solid 2px;
+  border-radius: 25px;
+  box-shadow: 0.5px 0.5px 2px 0.5px black;
+  color: #f7ecf7;
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.form-login img {
+  border-radius: 50%;
+  margin: 10px 0;
+  width: 70%;
+}
+
+.form-login button {
+  background: linear-gradient(45deg, #ff4763, #ff4763, #ff3f29);
+  border: none;
+  border-radius: 25px;
+  color: #f7ecf7;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 5px;
+  width: 80%;
+}
+
+.form-login button:hover {
+  background-color: #ff3f29;
+}
+
+.form-login label {
+  text-align: center;
+  width: 100%;
+}
+
+.form-login input {
+  border: none;
+  border-radius: 25px;
+  padding: 5px;
+  text-align: center;
+  width: 80%;
+}
+
+.form-login input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Tela de comidas */
+.tela-food {
+  background-color: #f7f2f7;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.tela-drink {
+  background-color: #f7f2f7;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 0;
+  position: relative;
+  text-align: center;
+  width: 100vw;
+}
+
+.btn-categories {
+  background: linear-gradient(45deg, #ff4763, #ff4763, #ff3f29);
+  border: none;
+  border-radius: 25px;
+  margin: 1px;
+}
+
+.tela-cards {
+  display: flex;
+  height: 90%;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  width: 90%;
+}
+
+
+/* Header */
+.header-principal {
+  align-items: center;
+  background: linear-gradient(45deg, #ff4763, #ff4763, #ff3f29);
+  border-radius: 0 0 25px 25px;
+  color: #f7ecf7;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10px;
+  position: relative;
+  text-align: center;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+.logo-size {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 40px;
+}
+
+.searchBar {
+  color: #ff3f29;
+  padding: 5px;
+  position: relative;
+  text-align: center;
+}
+
+.btn-search {
+  background: none;
+  border: none;
+}
+
+.btn-search:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.barra-pesquisar {
+  margin-bottom: 5px;
+}
+
+.barra-pesquisar input {
+  border: none;
+  border-radius: 25px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.barra-pesquisar button {
+  background: linear-gradient(45deg, #ff4763, #ff4763, #ff3f29);
+  border: none;
+  border-radius: 25px;
+  margin: 1px;
+}
+
+.btn-radio {
+  align-items: center;
+  margin-right: 2px;
+}
+
+/* Footer */
+.footer {
+  align-items: center;
+  background: linear-gradient(45deg, #ff4763, #ff4763, #ff3f29);
+  border-radius: 25px 25px 0 0;
+  bottom: 0;
+  color: #f7ecf7;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Cards */
+.items-list {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10px;
+  text-align: center;
+}
+
+.card {
+  border-radius: 25px;
+  box-shadow: 0 0.5px 2px 0.5px #ff5444;
+  overflow: hidden;
+}
+
+.card-body {
+  border-radius: 25px solid #ff5444;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.card-body img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-subtitle {
+  background-color: #ff5444;
+  bottom: 0;
+  color: #f7ecf7;
+  opacity: 0.7;
+  position: absolute;
+  width: 100%;
+}
+
+.card-subtitle:hover {
+  opacity: 1;
+}
+
+.black {
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Details */
+.card-details {
+  background: linear-gradient(45deg, #ff4763, #ff4763, #ff3f29);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.tela-details {
+  color: black;
+}
+
+.img-principal {
+  border-radius: 25px;
+  box-shadow: 0.5px 0.5px 2px 0.5px black;
+  margin: 10px auto;
+  max-width: 90vw;
+  overflow: hidden;
+}
+
+.img-principal img {
+  max-width: 100%;
+}
+
+.btn-img {
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+.receita-details {
+  background-color: #f7f2f7;
+  border-radius: 25px;
+  box-shadow: 0.5px 0.5px 2px 0.5px black;
+  margin: 0 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.receita-details p {
+  text-align: center;
+}
+
+.video {
+  text-align: center;
+}
+
+.video iframe {
+  border-radius: 25px;
+  width: 90%;
+}
+
+.carousel {
+  border-radius: 25px;
+}
+
+.recomendado {
+  color: #f7ecf7;
+  text-align: center;
+}
+
+.copiado {
+  background: linear-gradient(45deg, white, #f7ecf7, #efe6ef, #e7dae7);
+  border-radius: 25px;
+  box-shadow: 0.5px 0.5px 2px 0.5px black;
+  color: #ff4763;
+  font-family: Poppins , sans-serif;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  transform: translate(10px, -40px);
+  width: 40%;
+}
+
+/* Details Progress */
+.tela-progress {
+  background: linear-gradient(45deg, #ff4763, #ff4763, #ff3f29);
+  display: flex;
+  flex-direction: column;
+}
+
+.striped {
+  text-decoration: line-through;
+}
+
+.normal {
+  text-decoration: none;
+}
+
+
+.btn-finalizar {
+  margin-left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+/* Explorar */
+.btn-explore {
+  align-self: center;
+  background: linear-gradient(45deg, #ff4763, #ff4763, #ff3f29);
+  border: none;
+  border-radius: 25px;
+  color: #f7f2f7;
+  cursor: pointer;
+  display: flex;
+  font-family: Montserrat , sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.tela-explore {
+  background-color: #f7f2f7;
+  height: 100vh;
+}
+
+.foodScreen {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  transform: translateY(-70px);
+}
+
+.div-select {
+  display: flex;
+  justify-content: center;
+}
+
+.select-area {
+  background: linear-gradient(45deg, #ff4763, #ff4763, #ff3f29);
+  border: none;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+
+/* Receitas Favoritas */
+.btn-favorites {
+  background: linear-gradient(45deg, #ff4763, #ff4763, #ff3f29);
+  border: none;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.menu-favorites {
+  display: flex;
+  justify-content: center;
+}
+
+.btns-f-c {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.titulo-favorites {
+  background-color: #ff3f29;
+  color: #f7f2f7;
+  display: block;
+  opacity: 0.7;
+  width: 100%;
+}
+
+/* Tela de receitas feitas */
+.card-feito {
+  border-radius: 25px solid #ff5444;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.card-feito img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Tela de Loading */
+.body-loading {
+  background: linear-gradient(45deg, #ff4763, #ff4763, #ff3f29);
+  height: 100vh;
+  width: 100vw;
+}
+
+.tela-loading {
+  background: linear-gradient(45deg, white, #f7ecf7, #efe6ef, #e7dae7);
+  border-radius: 100px;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.div-loading {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo-loading {
+  border-radius: 50%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.borda {
+  animation: receitaLoading 10s linear infinite;
+  height: 300px;
+  object-fit: cover;
+  width: 300px;
+}
+
+@keyframes receitaLoading {
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* NotFound */
+.tela-found {
+  background: linear-gradient(45deg, white, #f7ecf7, #efe6ef, #e7dae7);
+  border-radius: 100px;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.img-notFound img {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -60%);
+  width: 100%;
+}
+
+.img-notFound h1 {
+  color: black;
+  left: 40%;
+  position: absolute;
+  top: 65%;
+  transform: translate(-30%, -50%);
+}
+
+/* Perfil */
+.tela-profile {
+  background-color: #f7f2f7;
+  height: 100%;
+  width: 100%;
+}
+
+.menu-profile {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateY(70px);
+}
+
+.btn-menu {
+  background: linear-gradient(45deg, #ff4763, #ff4763, #ff3f29);
+  border: none;
+  border-radius: 25px;
+  color: #f7f2f7;
+  cursor: pointer;
+  display: flex;
+  font-family: Montserrat , sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Fonts e botoes */
+.titulos {
+  font-family: Poppins , sans-serif;
+  font-weight: 600;
+}
+
+.textos {
+  font-family: Poppins , sans-serif;
+  font-weight: 200;
+}
+
+.font-media {
+  font-family: Poppins , sans-serif;
+  font-weight: 300;
+}
+
+.start {
+  background: linear-gradient(45deg, white, #f7ecf7, #efe6ef, #e7dae7);
+  border: none;
+  border-radius: 25px;
+  bottom: 0;
+  box-shadow: 0.5px 0.5px 2px 0.5px black;
+  color: #ff4763;
+  left: 50%;
+  margin-bottom: 5px;
+  padding: 10px;
+  position: fixed;
+  transform: translateX(-50%);
+}
+
+.btn-finalizar {
+  background: linear-gradient(45deg, white, #f7ecf7, #efe6ef, #e7dae7);
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0.5px 0.5px 2px 0.5px black;
+  color: #ff4763;
+  left: 50%;
+  margin-bottom: 5px;
+  padding: 10px;
+  transform: translateX(-50%);
+}
+
+.btn-voltar {
+  background: linear-gradient(45deg, white, #f7ecf7, #efe6ef, #e7dae7);
+  border-radius: 25px;
+  box-shadow: 0 0 2px 1px black;
+  height: 50px;
+  left: 10px;
+  position: fixed;
+  top: 10px;
+  width: 50px;
+}
+
+/* } */
