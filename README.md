@@ -8,6 +8,7 @@
 - React Router
 - Bootstrap
 - Redux
+- ESlint
 
 ---
 ## Instalação:
